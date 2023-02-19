@@ -42,6 +42,7 @@ const BeforeAfterImage = ({ srcBefore, srcAfter, height, dividingLineWidth, divi
         <BeforeAfterImageWrapper
             height={height ?? '100%'}
             onMouseMove={handleMouseMove}
+            changeCursor={mousePressed}
         >
             <ImageWrapper>
                 <img draggable={false} src={srcAfter} alt="after" height="100%"/>

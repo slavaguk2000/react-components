@@ -1,8 +1,9 @@
 import {Box, styled} from "@mui/material";
 
-export const BeforeAfterImageWrapper = styled(Box)`
-  position: relative;
-`
+export const BeforeAfterImageWrapper = styled(Box)((props) => ({
+    position: 'relative',
+    cursor: props.changeCursor ? 'ew-resize' : undefined,
+}));
 
 export const ImageWrapper = styled(Box)`
   height: 100%;
@@ -57,6 +58,7 @@ export const DividingLineSliderWrapper = styled(Box)`
   transform: translate(-50%);
   align-items: center;
   height: 100%;
+  cursor: ew-resize;
   visibility: hidden;
 
   :active{
