@@ -1,22 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import BeforeAfterImage from "./BeforeAfterImage";
+import before from './before.jpg';
+import after from './after.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BeforeAfterImage srcAfter={after} srcBefore={before} height="500px" />
       </header>
     </div>
   );
